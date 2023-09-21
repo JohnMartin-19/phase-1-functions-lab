@@ -38,13 +38,13 @@ function farePrice(start, stop){
     console.log(dist)
     if (dist < 400){
         console.log('Free Ride bro!');
-    } else if (dist > 400  < 2000){
+    } else if (dist > 400 && dist < 2000){
         price = (dist - 400)*2
         console.log(price +'cents');
-    } else if (dist > 2000 < 2500){
+    } else if (dist > 2000 && dist < 2500){
         console.log('Flat fare');
     } else {
         console.log('We dont go that far')
     };
 };
-farePrice(1,5);
+farePrice(1,16);
